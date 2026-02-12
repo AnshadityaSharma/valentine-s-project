@@ -1,5 +1,5 @@
 // CONFIGURATION
-const phoneNumber = "918968162303"; // REPLACEME with your number
+const phoneNumber = "91 95593 36667"; // REPLACEME with your number
 const finalMessage = "Okay fine, I forgive you. Yes, I'll be your girlfriend again! 💖";
 
 // ELEMENTS
