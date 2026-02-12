@@ -1,6 +1,6 @@
 // CONFIGURATION
 const phoneNumber = "918968162303"; // REPLACEME with your number
-const finalMessage = "Okay fine, I forgive you. Yes, I'll be your girlfriend again! 💦💦💋💋💞💞";
+const finalMessage = "Okay fine, I may not forgive you but I'll tolerate you. Yes, I'll be your girlfriend again! 💦💦💋💋💞💞";
 
 // ELEMENTS
 const yesBtn = document.getElementById('yesBtn');
