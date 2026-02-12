@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Special One ❤️</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="bg-hearts" id="heartContainer">
+        </div>
+
+    <section id="page1" class="glass-container center-screen">
+        <h1 class="title">Hey, I have a question...</h1>
+        
+        <div class="gif-wrapper">
+            <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Cute animated bear" class="cute-gif">        </div>
+
+        <h2 class="main-question">
+            Will you be my Valentine? 
+            <span class="emoji-3d">🌹</span>
+        </h2>
+
+        <div class="btn-group">
+            <button class="btn yes-btn" id="yesBtn" onclick="acceptValentine()">YES! <span class="emoji-3d">❤️</span></button>
+            <button class="btn no-btn" id="noBtn" onmouseover="dodgeButton()" onclick="dodgeButton()">No 😤</button>
+        </div>
+    </section>
+
+    <div id="page2" class="hidden">
+        
+        <header class="hero-section">
+            <h1 class="hero-title">
+                I knew you'd say Yes! 
+                <span class="emoji-3d">🥰</span>
+            </h1>
+            <p class="hero-sub">I know I messed up. But I promise to make it right.</p>
+            
+            <div class="scroll-indicator" id="scrollArrow">
+                <p>Scroll Down</p>
+                <div class="arrow-down"></div>
+            </div>
+        </header>
+
+        <div class="gallery-container">
+            <div class="polaroid left-tilt">
+                <img src="images/img1.jpeg" alt="Photo 1" onerror="this.src='https://placehold.co/300x400/png/white?text=Our+Photo'">
+                <p class="caption">Yaadgaar din</p>
+            </div>
+            <div class="polaroid right-tilt">
+                <img src="images/img2.jpeg" alt="Photo 2" onerror="this.src='https://placehold.co/300x400/png/white?text=Our+Photo'">
+                <p class="caption">hottest "valentine"r</p>
+            </div>
+            <div class="polaroid right-tilt">
+                <img src="images/img5.jpeg" alt="Photo 2" onerror="this.src='https://placehold.co/300x400/png/white?text=Our+Photo'">
+                <p class="caption">cutest "valentine"r</p>
+            </div>
+            <div class="polaroid left-tilt">
+                <img src="images/img3.jpeg" alt="Photo 3" onerror="this.src='https://placehold.co/300x400/png/white?text=Our+Photo'">
+                <p class="caption">Cute moment</p>
+            </div>
+            <div class="polaroid right-tilt">
+                <img src="images/img4.jpeg" alt="Photo 2" onerror="this.src='https://placehold.co/300x400/png/white?text=Our+Photo'">
+                <p class="caption">Best date ever</p>
+            </div>
+            <div class="polaroid left-tilt">
+                <img src="images/img6.jpeg" alt="Photo 3" onerror="this.src='https://placehold.co/300x400/png/white?text=Our+Photo'">
+                <p class="caption">I love you</p>
+            </div>
+        </div>
+
+        <section class="final-proposal">
+            <div class="glass-card">
+                <h2 class="serious-question">Okay, one last thing...</h2>
+                <p class="context-text">
+                    I know you said <strong>"Mai abhi tak pati nahi hu"</strong>...<br>
+                    So let me ask properly this time.
+                </p>
+                <h1 class="final-ask">Will you be my Girlfriend again?</h1>
+                
+                <button class="btn final-yes-btn" onclick="sendWhatsApp()">
+                    YES, obviously! <span class="emoji-3d">💍</span>
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
